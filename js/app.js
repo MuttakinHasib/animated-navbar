@@ -76,3 +76,9 @@ openNav.addEventListener("click", () => {
 closeNav.addEventListener("click", () => {
     tlOpenNav.reverse();
 });
+
+menu.forEach(item => {
+    item.addEventListener("click", () => {
+        tlOpenNav.reverse();
+    });
+});
