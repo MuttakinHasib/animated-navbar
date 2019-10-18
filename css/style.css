@@ -23,12 +23,22 @@ body {
 
 main {
   width: 350px;
-  height: 500px;
+  height: 600px;
   background: #222;
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
   position: relative;
   overflow: hidden;
+}
+
+main h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-weight: 400;
+  color: #fff;
 }
 
 .open-nav {
@@ -127,6 +137,7 @@ main {
   display: block;
   height: 100%;
   background: #fff;
+  z-index: 10;
 }
 
 .main-container .block-left {
@@ -145,7 +156,7 @@ main {
   left: 15%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  z-index: 5;
+  z-index: 11;
   display: none;
 }
 
@@ -163,5 +174,11 @@ main {
 .main-container .menu ul li a {
   text-decoration: none;
   color: #f36;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.main-container .menu ul li a:hover {
+  color: #222;
 }
 /*# sourceMappingURL=style.css.map */

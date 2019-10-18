@@ -37,7 +37,7 @@ tlOpenNav
     .to(coverRight, 0.5, { left: "50%" }, "-=0.5")
     .to(closeNav, 0.01, { display: "flex" }, "-=0.3")
     .to(menuBar, 0.3, { display: "block" }, "-=0.01")
-    .staggerFrom(menu, 0.3, { opacity: 0, x: 10 }, 0.03)
+    .staggerFrom(menu, 0.3, { opacity: 0, x: 20 }, 0.03)
     .from(
         closeLineOne,
         0.35,
