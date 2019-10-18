@@ -12,6 +12,13 @@ const menuBar = document.querySelectorAll(".menu");
 const menu = document.querySelectorAll(".menu ul li");
 
 const tlOpenNav = new TimelineMax({ paused: true, reversed: true });
+const burst = new mojs.Burst({
+    radius: { 0: 360 }
+});
+
+document.addEventListener("click", () => {
+    burst.play();
+});
 
 tlOpenNav
     .to(
